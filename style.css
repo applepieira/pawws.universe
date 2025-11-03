@@ -81,7 +81,7 @@ section.active {
 }
 /* LOGO */
 #logo {
-  width: 250px;
+  width: 400px;
   animation: glow 3s ease-in-out infinite alternate;
   margin-bottom: 20px;
 }
@@ -111,12 +111,28 @@ section.active {
   box-shadow: 0 0 15px #fff;
 }
 /* QUIZ */
+#question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 30px auto;
+  line-height: 1.5;
+}
 #progress-bar {
+  display: block;
   width: 80%;
-  height: 8px;
+  max-width: 700px;
+  height: 10px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
   margin-bottom: 20px;
+  overflow: hidden;
+  justify-content: center;
+  flex-shrink: 0;
 }
 #progress {
   height: 8px;
@@ -131,25 +147,47 @@ section.active {
   border-radius: 15px;
   margin-bottom: 20px;
   animation: fadeIn 0.6s ease;
+  justify-content: center;
+}
+.story-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.85;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 10px;
 }
 #q-text {
-  font-size: 1.3em;
-  margin-bottom: 20px;
+  font-family: "Fredoka One", cursive;
+  color: #f4a9ea;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  max-width: 700px;
 }
 #options-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
   width: 90%;
   max-width: 400px;
+  margin: 0 auto;
 }
 #options-wrap button {
+  width: 100%;
+  max-width: 400px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   padding: 10px;
   font-size: 1em;
+  text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -186,12 +224,15 @@ section.active {
 
   #logo {
     width: 70%;
-    max-width: 250px;
+    max-width: 400px;
   }
 
   h1,
   h2 {
     font-size: 1.5em;
+  }
+  #progress-bar {
+    width: 85%;
   }
 
   .glow-btn {
