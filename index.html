@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Paws Universe Quiz</title>
  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Fredoka+One&display=swap" rel="stylesheet">
     </head>
     <body>
          <div id="star-bg"></div>
          <div class="stars"></div>
          <div class="twinkling"></div>
+         <!-- Language Section -->
           <section id="language" class="active">
+            <div class="container"> 
             <img src="image/logo.png" alt="Paws Universe Logo" id="logo">
-            <h1 class="tagline">COMING SOON!</h1>
-            <h2 class="subtagline">Available on November 3, 2025</h2>
-            <h3 class="subtagline">Staytune!!😸✨</h3>
+            <h1 class="tagline">Welcome!!</h1>
+            <h2 class="subtagline">Language Options</h2>
+            <button id="english-btn" class="glow-btn">English </button>
+            <button id="indonesia-btn" class="glow-btn">Indonesia </button>
+            </div>
           </section>
-          <!-- FOOTER -->
-          <footer id="footer">
-          <p>Follow us on
-          <a href="https://www.instagram.com/yourpage" target="_blank">@pawsuniverse</a>
-          </p>
-          <p class="credit">© 2025 Paws Universe — Snack Your Personality</p>
-        </footer>
+         <!-- Home Section -->
+          <section id="home" class="hidden">
+            <div class="container"> 
+            <img src="image/logo.png" alt="Paws Universe Logo" id="logo">
+            <h1 id="home-title"></h1>
+            <h2 id="home-subtitle"></h2>
+            <button id="start-btn" class="glow-btn"></button>
+            </div>
+         </section>
+         <!-- Quiz Section -->
+            <section id="quiz" class="hidden">
+              <div class="container">
+              <div id="progress-bar">
+                <div id="progress"></div>
+              </div>
+              <img id="question-img" src="" alt="Question Image" />
+              <h2 id="story-text"></h2>
+              <h3 id="q-text"></h3>
+              <div id="options-wrap"></div>
+              </div>
+            </section>
+         <!-- Result Section -->
+            <section id="result" class="hidden">
+              <div class="container">
+              <div id="result-content">
+               <h2 id="result-title"></h2>
+               <img id="result-img" src="" alt="Result Cat" />
+               <p id="result-desc"></p>
+              </div>
+               <button id="restart-btn" class="glow-btn">Play Again/Main lagi</button>
+           </section>
+                        <!-- Connect yo your JS -->
+    <script src="script.js"></script>
+                         <!-- FOOTER -->
+                          <footer id="footer">
+                            <p>Follow us on
+                                <a href="https://www.instagram.com/pawss.universe?igsh=MXhmNzJkcjViYTd1OA==" target="_blank">@pawss.universe</a>
+                                </p>
+                                <p class="credit">© 2025 Paws Universe — Snack Your Personality</p>
+                                </footer>
+             </section>
     </body>
     </head>
 </html>
